@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2)), 
+                url('Messenger_creation_B9782DCF-0D1B-47E4-8D7E-2C3688EE4BDB.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.left-section, .right-section {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+p {
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+}
+
+.right-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0a500;
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.topic-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.topic-item a {
+    color: #f0a500;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.topic-item a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.music-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-image: none;
+}
+
+.music-container h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.music-container audio {
+    margin-top: 10px;
+}
+.music-container h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.music-container audio {
+    margin-top: 10px;
+}
+.left-section {
+    width: 70%;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+.right-section {
+    width: 30%;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    font-size: 30px;
+}

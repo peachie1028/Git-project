@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #2c3e50, #34495e, #2c3e50);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #3498db;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}
+
+.topics {
+    padding: 20px;
+    text-align: center;
+}
+
+.topics h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.topic-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.topic {
+    width: 22%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.topic a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #1abc9c;
+    display: block;
+}
+
+.topic:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.middle-section {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+
+.middle-section p {
+    margin: 0 auto;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1.5rem;
+    pointer-events: none;
+    animation: fall linear infinite;
+    z-index: 9999;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
